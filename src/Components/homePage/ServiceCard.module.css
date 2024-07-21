@@ -1,0 +1,47 @@
+.serviceCard {
+    background-color: #EDF0C7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 80px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  @media (max-width: 991px) {
+    .serviceCard {
+      padding: 0 20px;
+      margin-top: 13px;
+    }
+  }
+  
+  .serviceCard:hover {
+    background-color: #FF5C00; /* New background color on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Box shadow effect */
+  }
+  
+  .serviceIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 75px;
+  }
+  
+  .serviceTitle {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    margin-top: 7px;
+  }
+  
+  .serviceDescription {
+    font-family: Inter, sans-serif;
+    font-weight: 200;
+    line-height: 30px;
+    margin-top: 23px;
+  }
+  
+  @media (max-width: 991px) {
+    .serviceDescription {
+      margin-left: 8px;
+    }
+  }
+  

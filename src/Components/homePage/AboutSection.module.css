@@ -1,0 +1,74 @@
+.aboutSection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-left: 15%;
+}
+
+.imageContainer {
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+  padding: 10px;
+  flex-direction: row;
+}
+
+.gymImage {
+  margin-right: 10px;
+  width: 400px;
+  height: auto;
+}
+
+.contentContainer {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.highlightText {
+  color: #77a83a;
+}
+
+.aboutDescription {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .imageContainer {
+    flex-direction: column;
+  }
+
+  .gymImage {
+    width: 50%;
+    margin: 0 0 10px 0;
+  }
+
+  .contentContainer {
+    max-width: 100%;
+  }
+
+  .aboutTitle {
+    font-size: 24px;
+  }
+
+  .aboutDescription {
+    font-size: 14px;
+  }
+}

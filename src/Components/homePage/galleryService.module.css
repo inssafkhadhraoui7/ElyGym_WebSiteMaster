@@ -1,0 +1,34 @@
+.gallerySection {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .galleryTitle {
+    font-size: 2rem;
+   
+  }
+  
+  .galleryDescription {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    grid-template-rows: repeat(3, 180px); /* Adjust the number of rows and row height as needed */
+    justify-content: center;
+  }
+  
+  .galleryImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .galleryImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

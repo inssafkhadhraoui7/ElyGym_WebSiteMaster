@@ -1,0 +1,98 @@
+/* Footer.module.css */
+.footer {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.footerContent {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footerLogo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    align-items: left;
+    margin-bottom: 20px;
+}
+
+.footerLogoImage {
+    width: 50px;
+    height: auto;
+}
+
+.footerLogoText {
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.footerLogoHighlight {
+    color: #77A83A;
+   
+}
+
+.footerDescriptionWrapper {
+    text-align: left; /* Aligns content to the left */
+    margin-bottom: 20px;
+    padding: 0 10%; /* Optional padding for better spacing */
+}
+
+.footerDescription {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.socialIconLink {
+    margin: 0 10px;
+}
+
+.socialIcon {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.footerNav {
+    margin-bottom: 20px;
+}
+
+.footerNavList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footerNavItem {
+    margin: 0 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.footerNavItem:hover {
+    border-bottom: 1px solid #77A83A;
+    color: #77A83A;
+}
+
+.copyright {
+    font-size: 20px;
+}
+
+.designerName {
+    font-weight: bold;
+    color: #77A83A;
+}

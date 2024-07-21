@@ -1,0 +1,28 @@
+.gymContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  min-height: 100vh; /* Ensure the container covers the full height of the viewport */
+}
+
+main {
+  flex: 1; /* Allow the main content to take up the remaining space */
+}
+
+@media (max-width: 768px) {
+  .gymContainer {
+    padding: 0 15px; /* Add padding on smaller screens */
+  }
+}
+
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}

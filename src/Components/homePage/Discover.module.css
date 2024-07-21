@@ -1,0 +1,109 @@
+.rectangleParent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  min-height: 665px;
+  margin-top: 10%;
+  text-align: center;}
+
+.frameChild {
+  width: 100%; /* Make background image width 100% */
+  height: 100%; /* Ensure it covers the full height */
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  mix-blend-mode: linear-burn;
+  z-index: 1;
+  background-image: url('slide2-1@2x.png'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire area */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.frameChild::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: 2;
+  pointer-events: none;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  justify-content: center;
+  position: relative;
+  color: white;
+  z-index: 2;
+  text-align: left; /* Align text content to the left */
+  gap: 20px; /* Adjust gap between elements */
+}
+
+.discoverYourPotential {
+  margin: 0;
+}
+
+.bookYourEarlySeatToGetSu {
+  margin: 0;
+  font-size: 30px; /* Increase font size */
+}
+
+.joinTodayButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.joinToday {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  height: 70px;
+  width: 200px;
+  border: 1px solid yellow; /* Define your border color variable */
+  box-sizing: border-box;
+  padding: 20px; /* Define your padding variables */
+  background-color: yellow; /* Define your background color variable */
+  white-space: nowrap;
+  z-index: 2;
+  transition: background-color 0.3s, color 0.3s, border 0.3s; /* Add transition for smooth hover effect */
+}
+
+.joinToday:hover {
+  color: yellow; /* Define hover text color */
+  border: 1px solid yellow; /* Define hover border color */
+  background-color: transparent; /* Define hover background color */
+}
+
+@media screen and (max-width: 800px) {
+  .contentContainer {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    line-height: 30px; /* Adjust line height as needed */
+    gap: 10px; /* Adjust gap between elements */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contentContainer {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    line-height: 25px; /* Adjust line height as needed */
+    gap: 5px; /* Adjust gap between elements */
+  }
+}

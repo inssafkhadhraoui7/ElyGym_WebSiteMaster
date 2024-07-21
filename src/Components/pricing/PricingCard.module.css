@@ -1,0 +1,89 @@
+.pricingCard {
+    flex: 1;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1), 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    color: #828282;
+    padding: 48px;
+  }
+  
+  .cardTitle {
+    color: #000;
+    font: 500 inherit;
+    font-size: 2rem;
+  }
+  
+  .priceContainer {
+    display: flex;
+    margin-top: 12px;
+    gap: 8px;
+    color: #000;
+    align-items: baseline;
+  }
+  
+  .price {
+    font: 700 40px/110% inherit;
+    font-size: 1.5rem;
+  }
+  
+  .period {
+    font: 500 16px/150% inherit;
+  }
+  
+  .featureList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .featureItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  .featureImage {
+    width: 24px; /* Adjust the size of the image */
+    height: 24px; /* Adjust the size of the image */
+    margin-right: 8px; /* Space between image and text */
+  }
+  
+  .featureItem span {
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  
+  .selectButton {
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 14px 24px;
+    margin-top: 32px;
+    font: 500 inherit;
+    font-size: medium;
+    cursor: pointer;
+  }
+  .selectButton:hover {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid black;
+  }
+  
+  .popularCard {
+    border: 2px solid #77a83a;
+  }
+  
+  @media (max-width: 991px) {
+    .pricingCard {
+      margin-top: 32px;
+      padding: 32px 20px;
+    }
+  
+    .selectButton {
+      padding: 12px 20px;
+    }
+  }

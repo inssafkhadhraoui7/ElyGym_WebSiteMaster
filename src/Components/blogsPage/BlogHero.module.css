@@ -1,0 +1,71 @@
+.blogHero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .heroContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #FF5C00;
+  }
+  
+  .breadcrumbs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #000;
+  }
+  
+  .breadcrumbItem {
+    margin: 0 5px;
+  }
+  
+  .breadcrumbSeparator {
+    margin: 0 5px;
+  }
+  
+  .heroTitle {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .searchInput {
+    padding: 10px 15px;
+    width: 400px;
+    height: 50px;
+    border: 1px solid  #77A83A ;
+    outline: none;
+  }
+  
+  .searchButton {
+    padding: 10px 15px;
+    background-color: #555;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .searchButton:hover {
+    background-color: #777;
+  }
+  
+  .searchIcon {
+    width: 20px;
+    height: 20px;
+  }
+  

@@ -1,0 +1,36 @@
+.featureCard {
+    background-color: #000; /* Black background */
+    color: #FFF; /* White text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center align text */
+    padding: 62px 80px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 991px) {
+    .featureCard {
+        padding: 0 20px;
+        margin-top: 13px;
+    }
+}
+
+.featureCard:hover {
+    background-color: #FF5C00; /* New background color on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Box shadow effect */
+}
+
+.icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 75px;
+}
+
+.title {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    color: #FFF; /* Ensure title color is white */
+    margin-top: 7px;
+}

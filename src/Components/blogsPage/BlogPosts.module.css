@@ -1,0 +1,43 @@
+.blogPosts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 100px;
+   
+  }
+  
+  .blogPostCard {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blogPostCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .blogPostCard img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .blogPostCard .content {
+    padding: 15px;
+  }
+  
+  .blogPostCard .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .blogPostCard .description {
+    font-size: 0.9em;
+    color: #777;
+  }
+  

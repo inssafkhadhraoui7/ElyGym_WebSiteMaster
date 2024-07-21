@@ -1,0 +1,45 @@
+.blogPostCard {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .blogPostCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .postImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .postTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+    color: #333;
+  }
+  
+  .postDescription {
+    font-size: 1em;
+    color: #000;
+    padding: 0 15px 15px 15px;
+  }
+  .readMoreButton {
+    background-color: transparent;
+    color: #FF5C00;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .readMoreButton:hover {
+   color: #000; 
+  }

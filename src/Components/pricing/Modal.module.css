@@ -1,0 +1,110 @@
+/* Modal.module.css */
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background: #fff;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .formGroup {
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 10%;
+  }
+  
+  .formGroup input {
+    width: calc(80% - 10px); /* Adjust width to account for icon */
+    padding: 8px 30px 8px 8px; /* Add space for icon */
+    border: 1px solid #ccc;
+  }
+  
+  .formGroup i {
+    position: absolute;
+   left: 80%; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+  }
+  
+  button[type="submit"] {
+    background-color: #77a83a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #77a83a;
+  }
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logoImage {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-left: 40px;
+  }
+  
+  .logoText {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .logoHighlight {
+    color: #77a83a; /* Highlight color for "GYM" */
+    margin-top: 5%;
+  }
+  .checkgroub {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically centered */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+  
+  .check {
+    margin-right: 10px; /* Space between checkbox and text */
+  }
+  
+  .iHaveA {
+    font-size: 14px; /* Adjust font size as needed */
+    color: #333; /* Text color */
+  }
+  /* Modal.module.css */
+
+.errorText {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  

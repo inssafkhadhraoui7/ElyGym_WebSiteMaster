@@ -1,0 +1,149 @@
+/* Header Styles */
+.header {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  background-color: black;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoImage {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-left: 40px;
+}
+
+.logoText {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.logoHighlight {
+  color: #77a83a; /* Highlight color for "GYM" */
+  margin-top: 5%;
+}
+
+.navigation {
+  flex-grow: 1;
+  margin-left: 20%;
+  display: flex; /* Ensure navigation is displayed as flex */
+}
+
+.navList {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  position: relative; /* Positioning context for the pseudo-element */
+  margin: 0 15px;
+  color: white;
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 5px; /* Space for the border */
+}
+
+.navLink {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+.navItem:hover {
+  color: #77a83a; /* Text color on hover */
+}
+
+.navItem::after {
+  content: ''; /* Create the underline */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px; /* Border thickness */
+  background-color: #77a83a; /* Color of the underline */
+  transition: opacity 0.3s; /* Smooth animation for underline */
+  opacity: 0; /* Initially hidden */
+}
+
+.navItem:hover::after {
+  opacity: 1; /* Show underline on hover */
+}
+
+.authContainer {
+  display: flex;
+  margin-right: 3%;
+  gap: 20px;
+  align-items: center;
+}
+
+.authContainer i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.authContainer i:hover {
+  color: #77a83a;
+}
+
+/* Mobile Menu Button */
+.mobileMenuButton {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure space is correctly distributed */
+  }
+
+  .logoContainer {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navigation {
+    display: none; /* Hide navigation by default */
+    width: 100%;
+    text-align: center;
+  }
+
+  .navigation.show {
+    display: flex; /* Show navigation when menu is toggled */
+    flex-direction: column;
+  }
+
+  .navList {
+    flex-wrap: wrap;
+    gap: 10px; /* Reduce gap on mobile */
+  }
+
+  .authContainer {
+    margin-right: 0;
+  }
+
+  .mobileMenuButton {
+    display: block; /* Show mobile menu button */
+  }
+}

@@ -1,0 +1,260 @@
+/* Container for centering the About Us section */
+.navigator { /* Assuming .navigator is the parent of .aboutUs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust if needed */
+}
+
+/* About Us section */
+.aboutUs {
+  margin: 0; /* Adjust as needed */
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 150%;
+  font-family: inherit;
+  text-align: center;
+}
+
+/* Divider styling */
+.divider {
+  height: 5px;
+  flex: 1;
+  position: relative;
+  border-radius: 2px;
+  background-color: #77A83A;
+}
+
+.dividerWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* Flex container styles */
+.aboutUsContent,
+.aboutUsHeader,
+.dividerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUsHeader {
+  width: 278px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.aboutUsContent {
+  width: 906px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Team icons */
+.team41Icon,
+.team31Icon {
+  position: relative;
+  object-fit: cover;
+}
+
+.team41Icon {
+  height: 404px;
+  width: 238px;
+}
+
+.team31Icon {
+  height: 404px;
+  width: 238px;
+  align-self: stretch;
+  max-width: 100%;
+  margin-top: 20%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+/* Team image container */
+.teamImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 23px;
+}
+
+.teamImageContainer1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 486px;
+  width: 227px;
+  flex-direction: column;
+  padding: 63px;
+  box-sizing: border-box;
+  min-width: 227px;
+}
+
+/* Team container */
+.teamContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 11px;
+  box-sizing: border-box;
+  min-width: 330px;
+  max-width: 100%;
+}
+
+/* Text styling */
+.gym {
+  color: #77A83A;
+}
+
+.elyGym,
+.having10YearsOfExperience {
+  margin: 0;
+}
+
+.loremIpsumDolor {
+  font-weight: 300;
+}
+
+.loremIpsumDolorSitAmetCo {
+  margin: 0;
+}
+
+/* Container for team description */
+.elyGymHaving10Container {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  text-align: center;
+}
+
+/* Contact Us button container */
+.contactUsButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact Us button styles */
+.contactUsButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  height: 70px;
+  width: 200px;
+  padding: 10px 24px;
+  background-color: yellow;
+  white-space: nowrap;
+  border: none; /* Remove border */
+  z-index: 2;
+}
+
+.contactUsButton:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid yellow; /* Ensure border is removed on hover as well */
+}
+
+/* Team description container */
+.teamDescriptionContainer {
+  width: 428px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  min-width: 428px;
+  max-width: 100%;
+}
+
+/* About Us container styles */
+.aboutUsContainer,
+.teamContainerParent {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.teamContainerParent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  gap: 81px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.aboutUsContainer {
+  width: 1035px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 17px;
+}
+
+/* Contact Info styling */
+.contactInfo {
+  width: 1245px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px 68px;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  font-size: 17px;
+  color: black;
+  font-family: inherit;
+}
+.titleUnderline {
+  width: 100px; /* Adjust width as needed */
+  height: 2px; /* Thickness of the underline */
+  background-color: #77A83A; /* Color of the underline */
+}
+
+.sectionTitle {
+  font-size: 24px; /* Size of the title text */
+  font-weight: bold; /* Bold text for emphasis */
+  margin-bottom: 10px; /* Space between title and description */
+}
+
+.sectionDescription {
+  font-size: 24px; /* Size of the title text */
+  color: black; /* Color of the description text */
+  line-height: 1.5; /* Line height for readability */
+}
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 45px;
+  width: 100%;
+  max-width: 1085px;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .featureGrid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin-top: 40px;
+    justify-items: center;
+  }
+}

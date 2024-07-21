@@ -1,0 +1,34 @@
+/* CategoryTags.module.css */
+
+.categoryTags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+
+  }
+  
+
+  
+  .categoryTag {
+    background-color: #77A83A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .categoryTag:hover {
+    background-color: #5d832c;
+    transform: scale(1.05);
+  }
+  
+  .categoryTag:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(119, 168, 58, 0.5);
+  }
+  
